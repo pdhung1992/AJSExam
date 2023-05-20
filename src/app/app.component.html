@@ -1,5 +1,46 @@
-<section>
-  <div>
-    <router-outlet></router-outlet>
+<div class="container exam">
+  <div class="row">
+    <div class="col-4 sidebar">
+      <p>
+        <button class="btn-lg side-btn" type="button" data-bs-toggle="collapse" data-bs-target="#favorites" aria-expanded="false" aria-controls="collapseExample">
+          <i class="bi bi-chevron-down"></i> Favorites
+        </button>
+      </p>
+      <div class="collapse side-collapse" id="favorites">
+        <div class="card card-body">
+          <button class="btn sub-btn">Inbox</button>
+          <button class="btn sub-btn">Sent items</button>
+        </div>
+      </div>
+      <p>
+        <button class="btn-lg side-btn" type="button" data-bs-toggle="collapse" data-bs-target="#john" aria-expanded="false" aria-controls="collapseExample">
+          <i class="bi bi-chevron-down"></i> John
+        </button>
+      </p>
+      <div class="collapse" id="john">
+        <div class="card card-body">
+          <button class="btn sub-btn">Inbox</button>
+          <button class="btn sub-btn">Drafts</button>
+          <button class="btn sub-btn">Deleted items</button>
+          <button class="btn sub-btn">Sent items</button>
+          <button class="btn sub-btn">Outbox</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-8 content">
+      <div >
+        <div class="row sub-content" *ngFor="let m of mail">
+          <div class="col-2">
+            <img src="assets/images/blank-profile-picture-973460_640.webp" alt="" class="avatar img-fluid">
+          </div>
+          <div class="col-10 mail">
+            <p class="mail-content">{{m.name}}</p>
+            <p class="mail-content">{{m.tittle}}</p>
+            <p class="mail-content">{{m.content}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
+</div>
+

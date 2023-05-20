@@ -1,0 +1,41 @@
+.exam{
+  margin-top: 30px;
+}
+
+.exam .sidebar{
+  padding-top: 15px;
+  background-color: #f8f9fa;
+}
+.exam .side-btn{
+  width: 100%;
+  text-align: left;
+  border: none;
+  background-color: #f8f9fa;
+  padding-top: 10px;
+}
+.exam .sub-btn{
+  width: 100%;
+  text-align: left;
+  padding: 10px 0 10px 30px;
+  border-radius: unset;
+  background-color: #f8f9fa;
+}
+.exam .sub-btn:hover{
+  background-color: #125aff;
+  color: #fff;
+}
+.exam .card.card-body{
+  border: none;
+  background-color: #f8f9fa;
+  padding: 0;
+}
+
+.exam .content .sub-content{
+  border: 1px solid #6b747e;
+}
+.exam .content .avatar{
+  border-radius: 50%;
+  padding: 5px;
+  align-items: center;
+  margin: 0;
+}
